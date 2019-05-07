@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  var f0 = 0, f1 = 1, fn = 0;
+  var sum = 0;
+  for (let i = 0; i < 20; i++) {
+    fn = f0 + f1;
+    f0 = f1;
+    f1 = fn;
+    document.write(fn+"<br>");
+    sum += fn;
+  }
+  document.write("Tong 20 so dau tien la:" +sum);
+</script>
+</body>
+</html>

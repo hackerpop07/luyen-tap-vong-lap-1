@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  var n = parseInt(prompt("nhap so"));
+  var f0 = 0, f1 = 1, fn = 0;
+  for (let i = 0; i < n; i++) {
+    if (i < 2) {
+      document.write(i + "<br>");
+    } else {
+      fn = f0 + f1;
+      f0 = f1;
+      f1 = fn;
+      document.write(fn+"<br>");
+      if (fn % 5 == 0) {
+        document.write(fn + " la so chia het cho 5");
+        break;
+      }
+    }
+  }
+</script>
+</body>
+</html>
